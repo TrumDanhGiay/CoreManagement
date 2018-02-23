@@ -1,0 +1,184 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>aspnet-CoreManagement-45B018EF-CC86-4033-9BA5-9C66EEDBA687</UserSecretsId>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Shared\" />
+    <Folder Include="wwwroot\Style\assets\css\extras\" />
+    <Folder Include="wwwroot\Style\assets\css\icons\fontawesome\fonts\" />
+    <Folder Include="wwwroot\Style\assets\css\icons\glyphicons\" />
+    <Folder Include="wwwroot\Style\assets\css\icons\icomoon\fonts\" />
+    <Folder Include="wwwroot\Style\assets\css\icons\summernote\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\alpaca\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\d3\bars\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\d3\lines\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\d3\other\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\d3\pies\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\d3\sunburst\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\d3\tree\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\dashboard\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\dimple\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\fancytree\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\handsontable\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\jquery_ui\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\maps\vector\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\tables\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\tags_input\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\typeahead\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\uploader\" />
+    <Folder Include="wwwroot\Style\assets\demo_data\wizard\" />
+    <Folder Include="wwwroot\Style\assets\images\backgrounds\" />
+    <Folder Include="wwwroot\Style\assets\images\brands\" />
+    <Folder Include="wwwroot\Style\assets\images\flags\" />
+    <Folder Include="wwwroot\Style\assets\images\pnotify\" />
+    <Folder Include="wwwroot\Style\assets\images\ui\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\c3\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\d3\bars\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\d3\chords\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\d3\lines\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\d3\other\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\d3\pies\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\d3\sunburst\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\d3\tree\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\d3\venn\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\dimple\area\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\dimple\bars\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\dimple\bubble\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\dimple\lines\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\dimple\pies\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\dimple\rings\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\dimple\scatter\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\dimple\step\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\echarts\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\google\bars\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\google\bubbles\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\google\lines\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\google\other\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\google\pies\" />
+    <Folder Include="wwwroot\Style\assets\js\charts\google\scatter\" />
+    <Folder Include="wwwroot\Style\assets\js\core\libraries\jquery_ui\globalize\cultures\" />
+    <Folder Include="wwwroot\Style\assets\js\maps\google\basic\" />
+    <Folder Include="wwwroot\Style\assets\js\maps\google\controls\" />
+    <Folder Include="wwwroot\Style\assets\js\maps\google\drawings\" />
+    <Folder Include="wwwroot\Style\assets\js\maps\google\layers\" />
+    <Folder Include="wwwroot\Style\assets\js\maps\google\markers\" />
+    <Folder Include="wwwroot\Style\assets\js\maps\vector\" />
+    <Folder Include="wwwroot\Style\assets\js\pages\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\buttons\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\ace\snippets\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\addon\comment\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\addon\dialog\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\addon\display\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\addon\edit\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\addon\fold\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\addon\hint\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\addon\lint\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\addon\merge\dep\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\addon\mode\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\addon\runmode\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\addon\scroll\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\addon\search\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\addon\selection\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\addon\tern\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\addon\wrap\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\apl\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\asterisk\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\clike\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\clojure\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\cobol\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\coffeescript\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\commonlisp\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\css\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\diff\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\django\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\dtd\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\dylan\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\d\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\ecl\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\eiffel\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\erlang\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\fortran\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\gas\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\gfm\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\gherkin\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\go\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\groovy\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\haml\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\haskell\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\haxe\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\htmlembedded\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\htmlmixed\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\http\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\jade\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\javascript\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\jinja2\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\julia\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\livescript\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\lua\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\markdown\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\mirc\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\mllike\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\nginx\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\ntriples\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\octave\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\pascal\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\pegjs\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\perl\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\php\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\pig\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\properties\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\puppet\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\python\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\q\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\rpm\changes\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\rst\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\ruby\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\rust\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\r\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\sass\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\scheme\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\shell\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\sieve\" />
+    <Folder Include="wwwroot\Style\assets\js\plugins\editors\codemirror\mode\smalltalk\" />
+    <Folder Include="wwwroot\Style\ckeditor\" />
+    <Folder Include="wwwroot\Style\starters\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\angular - Copy.min.js">
+      <DependentUpon>angular - Copy.js</DependentUpon>
+    </Content>
+    <Content Update="wwwroot\angular - Copy.min.js.map">
+      <DependentUpon>angular - Copy.min.js</DependentUpon>
+    </Content>
+    <Content Update="wwwroot\angular-animate - Copy.min.js">
+      <DependentUpon>angular-animate - Copy.js</DependentUpon>
+    </Content>
+    <Content Update="wwwroot\angular-animate - Copy.min.js.map">
+      <DependentUpon>angular-animate - Copy.min.js</DependentUpon>
+    </Content>
+    <Content Update="wwwroot\angular-aria - Copy.min.js">
+      <DependentUpon>angular-aria - Copy.js</DependentUpon>
+    </Content>
+    <Content Update="wwwroot\angular-aria - Copy.min.js.map">
+      <DependentUpon>angular-aria - Copy.min.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+
+</Project>

@@ -1,4 +1,5 @@
-﻿app.controller("DashboardController", ['$scope', 'APIcall', function ($scope, APIcall) {
+﻿
+app.controller("DashboardController", ['$scope', 'APIcall', function ($scope, APIcall) {
     $scope.location = "Đang xác định ...";
     $scope.weather = "Đang lấy dữ liệu";
     var DofW = ["Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy", "Chủ Nhật"];
@@ -23,7 +24,7 @@
     var interval1 = setInterval(function () {
         if ($scope.lat != null) {
             APIcall.getCityName("http://api.openweathermap.org/data/2.5/weather?lat=" + $scope.lat + "&lon=" + $scope.lng + "&APPID=62927b11771e26157e9bc884aefb9d7e").then(function (response) {
-                $scope.temp = (response.data.main.temp -273,15);
+                $scope.temp = (response.data.main.temp -273.15);
                 $scope.dayofweek = DofW[new Date().getDay()-1];
                 console.log(DofW[new Date().getDay()]);
                 $scope.day = new Date().getDate();
@@ -33,9 +34,14 @@
                 switch(response.data.weather[0].main){
                     case "Clouds": {
                         $("#button-wind").click();
+                        break;
                     }
                     case "Clear": {
                         $("#button-sun").click();
+                        break;
+                    }
+                    case "Rain": {
+                        $("#button-rain").click();
                     }
                 }
                 clearInterval(interval1);
@@ -87,5 +93,26 @@
         updateChart(dataLength);
         setInterval(function () { updateChart() }, updateInterval);
 
+        
     }
+    $(function () {
+        navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+
+        var constraints = { audio: true, video: false };
+        var video = document.querySelector("video");
+
+        function successCallback(stream) {
+            window.stream = localMediaStream; // stream available to console
+            video.src = window.URL.createObjectURL(localMediaStream);
+            video.play();
+        }
+
+        function errorCallback(error) {
+            console.log("getUserMedia error: ", error);
+        }
+
+        navigator.getUserMedia(constraints, successCallback, errorCallback);
+
+    });
+
 }]);
